@@ -1,0 +1,21 @@
+extends layout
+block layout-content
+  .card#responseData
+    .container
+    h4
+      b Sign up
+    form(method='POST', action='/user/signup')
+      input#FirstName(type='text' name='FirstName', placeholder="First Name" required)
+      br
+      input#LastName(type='text' name='LastName', placeholder="Last Name" required)
+      br
+      input#Email(type='email' name='Email', placeholder="Email" required)
+      br
+      input#Password(type='password' name='Password', placeholder="Password" minlength="8" required)
+      br
+      input#Phone(type='text' name='Phone', placeholder="Phone Number")
+      br
+      input#newsletter(type='checkbox' name='newsletter')
+      <label for="newsletter">Subscribe to our newsletter</label>
+      input(type='submit' value='SIGN IN')
+        
